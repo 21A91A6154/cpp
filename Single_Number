@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,i,c=0,j;
+    cin>>n;
+    int x[n];
+    for(i=0;i<n;i++)
+    {
+        cin>>x[i];
+    }
+    for(i=0;i<n;i++)
+    {
+        c=0;
+        for(j=0;j<n;j++)
+        {
+            if(x[i]==x[j])
+            {
+                c++;
+            }
+        }
+        if(c==1)
+        {
+            cout<<x[i];
+        }
+    }
+    return 0;
+}
